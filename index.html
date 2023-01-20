@@ -1,0 +1,1350 @@
+<script>
+  //tema # 1 --comentarios--
+  //comentario de una linea
+  /*comentarios de varias lineas*/
+
+  // tema #2 tipos de datos en javascript
+  //undefined, null, boolean, string, number y object.
+
+  //tema #3 una variable: crear espacio en la memoria
+
+  var miVariable = "Isabela";
+
+  //console.log nos permite mostrar el valor que pasemos entre parentesis
+  //en javascript las lineas de codigo siempre terminan en ;
+  console.log(miVariable);
+
+  miVariable = 16;
+  console.log(miVariable);
+
+  var nombre = "Julieta";
+
+  // let y const se pueden usar como alternativa en lugar de var
+
+  // tema # 4 asignar valores a variables
+
+  var a;
+  var b = 2;
+
+  console.log(a); //error
+  console.log(b); // tiene un valor
+
+  a = 10;
+  console.log(a);
+
+  // tema # 5 asignar el valor de una variable a otra variable
+
+  var c = 5;
+  var d = c;
+
+  console.log(c);
+  console.log(d);
+
+  // otra alternativa
+
+
+  var e = 5;
+  var f;
+
+  f = e;
+
+  console.log(e);
+  console.log(e);
+
+  // tema # 6 inicializar variables
+
+  var x = 9;
+
+  var miIdioma = "Español";
+
+  //tema #7 variables no inicializadas
+
+  var h;
+  var i;
+
+  console.log(h);
+  h = 56
+  console.log(h);
+
+  // tema # 8 mayúsculas y minúsculas javascript es sencible, no las reconoce
+
+  var miPalabra = 5;
+
+  //console.log(MIPALABRA);
+
+  //Tema #9 operaciones aritmeticas
+
+  var suma = 7 + 12;
+
+  console.log(suma);
+
+  var resta = 15 - 6;
+  console.log(resta);
+
+  var multiplicacion = -2 * 5;
+  console.log(multiplicacion);
+
+  var division = 14 / 2;
+  console.log(division);
+
+  // tem #10 decimales
+
+  var miDecimal = 23.4;
+  // el punto nos dice que estamos trabajando con un decimal
+
+  // el resto de una división en javaScript
+
+  var resto = 15 % 5;
+  console.log(resto);
+
+  // tema #11 incrementar el valor de una variable
+
+  var librosComprados = 105;
+  console.log(librosComprados); // incialmente
+
+  //opción 1
+
+  librosComprados = librosComprados + 1;
+  console.log(librosComprados);
+
+  //opción 2
+
+  librosComprados++; //incrementan el valor de la variable en 1
+  console.log(librosComprados);
+
+  // tema #12 reducir el valor de una variable
+
+  var numeroDeEstudiantes = 256;
+  console.log(numeroDeEstudiantes);
+
+  numeroDeEstudiantes = numeroDeEstudiantes - 1;
+  console.log(numeroDeEstudiantes);
+
+  numeroDeEstudiantes--; //reducen el valor de la variable en 1
+  console.log(numeroDeEstudiantes);
+
+  // tema # 13 asiganción de suma (incrementar en un valor diferente a uno)
+
+  var p = 23;
+
+  //p = p + 5;
+
+  console.log(p);
+
+  p += 5;
+  console.log(p);
+  // quiero aumentar la variable en 5 y asignarle ese nuevo valor
+
+  // asignación de resta
+
+  var w = 25;
+  w -= 5;
+  console.log(w);
+  // quiero disminuir la variable en 5 y asignarle ese nuevo valor
+
+  //asignación de multiplicación
+
+  var z = 3;
+  z *= 5;
+  console.log(z);
+
+  //asignación de división
+
+  var s = 8;
+  s /= 2;
+  console.log(s);
+
+  // tema # 14  variables con cadenas de caracteres
+  // los caracteres string se pueden escribir en comillas simples o dobles pero no combinarlas
+
+  var nombre = "Isabela";
+  var apellido = "Sánchez Ramírez";
+  console.log(nombre);
+
+
+  // tema #15 escapar comillas en cadenas de caracteres
+
+  var miCadenita = "Soy una cadena de caracteres \"con comillas\"";
+  console.log(miCadenita);
+
+  var miMeta = 'Aprende a programar con "Isabela"';
+  console.log(miMeta);
+
+  //Secuencia de escape
+  /*
+  
+  \' comilla simple
+  \" comilla doble
+  \\ barra invertida
+  \n linea nueva
+  \r retorno de carro
+  \t tabulación
+  \b retroceso
+  \f salto de página
+  
+  */
+
+  // ejemplos
+
+  console.log("Estoy aprendiendo \'JavaScript");
+  console.log("Estoy aprendiendo \"JavaScript");
+  console.log("Estoy aprendiendo \\JavaScript");
+  console.log("Estoy aprendiendo \n JavaScript");
+
+  // tema #16 concatenar cadenas de caracteres
+
+  var nombreCompleto = "Alan " + " " + " Turing";
+  console.log(nombreCompleto);
+
+  // tema #17 construir cadenas con variables
+
+  var verbo = "Programar";
+
+  var mensaje = "Estoy aprendiendo a " + verbo;
+  console.log(mensaje);
+
+  // Tema #18 agregar variables a cadenas de caracteres
+
+  var mensajeCompleto = "Estoy aprendiendo a programar ";
+  var parteFinal = "para ser una gran ingeniera";
+
+  console.log(mensajeCompleto);
+
+  mensajeCompleto += parteFinal;
+
+  console.log(mensajeCompleto);
+
+  //Tema #19 longitud de una cadena de caracteres
+  // usamos a función length
+  var miCadena;
+  miCadena = "Hermosa";
+
+  console.log(miCadena.length);
+
+  // tema #20 Notación de corchetes 
+
+  var lenguajeDeProgramacion = "JavaScript";
+
+  /*
+  cadena:  J A V A S C R I P T
+  indices: 0 1 2 3 4 5 6 7 8 9
+  */
+
+  console.log(lenguajeDeProgramacion[8]);
+
+  //tema #21 inmutabilidad de cadenas de caracteres
+
+  // inmutabilidad: no se pueden cambiar
+  // las cadenas son inmutables, no se pueden cambiar caracteres, solo la cadena completa
+
+  var miCadena = "jola, mundo";
+  console.log(miCadena);
+  miCadena = "Hola, mundo";
+  console.log(miCadena);
+
+  console.log(miCadena);
+
+  // tema #22 acceder al ultimo caracter sin saber indice
+
+  var miCadena;
+
+  /*
+  el ultimo indice siempre es la longitud de la cadena -1 porque empezamos a contar desde 0
+  
+  miCadena.lentgh para JavaScript es 10
+  el último indice es 9
+  
+  cadena:  JavaScript
+  indices: 0123456789
+  */
+
+  miCadena = "Python";
+  console.log(miCadena[miCadena.length - 1]);
+
+  //tema #23 notación de corchetes de derecha a izquierda
+
+
+
+  /*
+  El penultimo indice es la longitud - 2 porque se empieza a contar desde cero
+  miCadena.length es 10. El penúltimo indice es 8.
+  
+  
+  cadena:  JavaScript
+  indices: 0123456789
+  
+  */
+
+  var miCadena;
+  miCadena = "JavaScript";
+  n = 4;
+  console.log(miCadena[miCadena.length - n]);
+
+
+
+  //Primer mini proyecto
+
+  var miSustantivo = "perro";
+  var miAdjetivo = "negro";
+  var miVerbo = "corrió";
+  var miAdverbio = "rapidamente";
+
+  //concatena las cadenas para crear una cadena que muestre un mensaje. puedes
+  // cambiar los valores de las variables
+
+  /* Por ejemplo : El perro negro corrió rapidamente a la tienda.
+  
+  */
+
+  var palabrasEnBlanco = "El " + miSustantivo + " " + miAdjetivo + " " + miVerbo + " " + miAdverbio + " " + " a la tienda";
+  console.log(palabrasEnBlanco);
+
+  var miSustantivo = "bicicleta";
+  var miAdjetivo = "rosa";
+  var miVerbo = "llegó";
+  var miAdverbio = "lentamente";
+
+
+  var palabrasEnBlanco = "La " + miSustantivo + " " + miAdjetivo + " " + miVerbo + " " + miAdverbio + " " + " a la tienda";
+  console.log(palabrasEnBlanco);
+
+  // tema # 24 Arreglos en JavaScript
+  // los arreglos son estructuras de datos que nos permiten almacenar  multiples valores
+
+  var miArreglo = ["Isabela", 24];
+  console.log(miArreglo);
+
+  var estudiantes = ["Isabela", "Samantha", "Laura"];
+  console.log(estudiantes);
+
+  var notas = [95, 67, 89, 56];
+  console.log(notas);
+
+  // tema #25 arreglos anidados
+
+  var listaDeEstudiantes = [["Isa", 5.0], ["manu", 4.7]];
+  console.log(listaDeEstudiantes);
+
+  var listaDeProductos = [["Camisa", 5.000, "2305"], ["celular", 1.000, "0456"], ["Camisa", 5.000, "2305"]]
+
+  console.log(listaDeProductos);
+
+  var datos = [[3.4, 3.5, 5.6, 3.2], [3.4, 3.5, 5.6, 3.2], [3.4, 3.5, 5.6, 3.2]];
+
+  console.log(datos);
+
+  //tema #26 acceder a los elementos de un arreglo
+
+  var miArreglo = [10, 20, 30];
+
+  /*
+  Arreglo: [10, 20, 30]
+  indices:  0   1    2
+  */
+
+  console.log(miArreglo[2])
+
+  var suma = miArreglo[0] + miArreglo[1] + miArreglo[2];
+  console.log(suma)
+
+  //Modificar elementos de un arreglo
+  // los arreglos son mutables, si se pueden cambiar valores individuales
+
+  var miArreglo = [10, 20, 30];
+
+  //miArreglo[0] = 40;
+  //miArreglo[0] = "Hola";
+  miArreglo[1] = [1, 2, 3];
+  console.log(miArreglo)
+
+  //Acceder a arreglos multidimensionales
+
+  var miArreglo = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+  /*
+  Arreglo:        [[1,2,3], [4,5,6],[7,8,9]]
+  indices:              0       1       2
+  indices internos: 0 1 2     0 1 2   0 1 2
+  */
+
+  console.log(miArreglo[0]);
+  console.log(miArreglo[1]);
+  console.log(miArreglo[2]);
+
+  //acceder a cada elemento de cada arreglo
+  // de mi arreglo [4,5,6] obtener el elemento 6
+  // especificamos indice del arreglo y luego posición del elemento
+
+  console.log(miArreglo[1][2]);
+
+  // tema #26 push. Agregar elemento al arreglo
+
+  var estaciones = ["Invierno", "otoño", "primavera"];
+
+  //push añade un elemento al final del arreglo
+
+  estaciones.push("Verano");
+
+  console.log(estaciones);
+
+  //tema #27 pop. remover ultimo elemento de un arreglo
+
+  var estaciones = ["Invierno", "otoño", "primavera", "verano"];
+  var estacion;
+  // pop remueve el ultimo elemento del arreglo
+  //pop retorna
+  estacion = estaciones.pop();
+
+  console.log(estaciones);
+  console.log(estacion);
+
+  // tema #28 remover el primer elemento del arreglo
+
+  var estaciones = ["Invierno", "otoño", "primavera", "verano"];
+  //shift remueve el primer elemento del arreglo
+
+  estaciones.shift();
+  console.log(estaciones);
+
+  //tema #29 añadir elemento al principio del arreglo
+
+  var estaciones = ["Invierno", "otoño", "primavera", "verano"];
+
+  //unshift  añade elemento al principio del arreglo
+  // en el parentesis se especifica que se desea agregar
+
+  estaciones.unshift("Vive la vida");
+  console.log(estaciones);
+
+  // mini proyecto, lista de compras
+
+  var miListaDeCompras = [["cereal", 3], ["leche", 4], ["huevo", 12], ["harina", 1]]
+
+  //posición de arreglo y luego posición del elemento en el arreglo
+  console.log("Voy a comprar " + miListaDeCompras[0][1] + " unidades de " + miListaDeCompras[0][0]);
+
+  console.log("Voy a comprar " + miListaDeCompras[1][1] + " unidades de " + miListaDeCompras[1][0]);
+
+  // tema #31 funciones permiten escribir codigo reutilizable
+
+  function mostrarMensaje() {
+    console.log("¡lucha por tus sueños!");
+
+  }
+
+  mostrarMensaje();
+
+  // tema #32 Argumentos
+  // los argumentos son los valores de los parametros
+
+  function sumar(a, b) {
+    var suma = a + b;
+    console.log("El resultado de la suma " + a + " + " + b + " es: " + suma)
+
+  }
+
+  sumar(5, 8);
+  sumar(8, 9);
+  sumar(10, 20);
+
+  var x = 5;
+  var y = 3;
+
+  sumar(x, y);
+
+  function concatenarTresCadenas(cadena1, cadena2, cadena3) {
+    console.log(cadena1 + " " + cadena2 + " " + cadena3);
+  }
+
+  concatenarTresCadenas("Estoy", "aprendiendo", "a programar");
+
+  // tema #33 ambito global
+
+  //a variables globales se pueden acceder, modificar y usar en cualquie parte del programa
+
+  var miVariableGlobal = 5;
+
+  console.log(miVariableGlobal);
+
+  function miFuncion() {
+    console.log(miVariableGlobal);
+  }
+
+  miFuncion();
+
+
+  console.log(miVariableGlobal);
+
+  // tema #34 variable local se definene dentro de una función y solo se pueden usar dentro de esa función
+
+  function miFuntion() {
+    var miVariableLocal = 4;
+    console.log(miVariableLocal); // etsa variable no puede ir fuera de la función
+  }
+
+  miFuntion();
+
+  // tema #35 VG vs VL
+
+  var miNombre = "Isabela";
+
+  function mostrarMiNombre() {
+    var miNombre = "Julieta"; // se muestra la variable local ya que tiene prioridad
+    console.log(miNombre)
+  }
+
+  mostrarMiNombre();
+  console.log(miNombre); // esta fuera de la función, entonces toma la VG
+
+  //tema # 36 retornar un valor
+  // las funciones pueden retornar y recibir valores
+
+  function suma(a, b) {
+    return a + b;
+
+  }
+
+  console.log(suma(5, 3));
+
+  //tema # 37 undefined
+
+  function sumita(a, b) {
+    console.log(a + b);
+
+  }
+
+  console.log(sumita(9, 10)); // undefined
+
+  // como no se retorno no esta definido, solo se esta mostrando el resultado
+
+  // tema #38 asigna un valor retornado
+
+  function sumando(a, b) {
+    return a + b;
+
+  }
+
+  var resultado = sumando(5, 10);
+  console.log(resultado)
+
+  function crearCadenaConMeta(lenguajeDeProgramacion) {
+    return "Mi meta es aprender " + lenguajeDeProgramacion;
+
+  }
+
+  //crearCadenaConMeta("JavaScript"); // no se mostrará nada, asignale una variable
+
+  var miMeta = crearCadenaConMeta("JavaScript");
+  console.log(miMeta);
+
+
+
+  /* proyecto
+  
+  EN informatica una cola (queue) es una estructura de datos abstracta
+   en la cual los elementos se mantienen en orden. los nuevos 
+   elementos se pueden añadir al final de la cola y los elementos previos
+    se retiran del principio de la cola.
+  
+   define una función proximoEnLaFila que tome un arreglo (arreglo) y un
+    número (elemento) como argumentos. Agrega el número al final del
+    arreglo y luego elemina el primer elemento del arreglo. La función 
+    proximoEnLaFila debe retornar el elemento que fue removido.
+  */
+
+  function proximoEnLaFila(arreglo, elemento) {
+    arreglo.push(elemento); // Agregar a la  final del arreglo
+    return arreglo.shift();
+  }
+
+  var miArreglo = [1, 2, 3, 4, 5];
+  //JSON.stringify presenta el arreglo más formal
+
+  console.log("Antes: " + JSON.stringify(miArreglo));
+
+  console.log(proximoEnLaFila(miArreglo, 6))
+
+  console.log("Después: " + JSON.stringify(miArreglo));
+
+  //Valores booleanos
+
+  // los valores son true y false
+
+  //console.log(true);
+  //console.log(True);
+  //console.log(TRUE);
+
+  //console.log(false);
+  //console.log(False);
+  //console.log(FALSE);
+
+  // operador de igualdad
+
+  console.log(5 == 5)
+  console.log(5 > 10)
+  console.log("HOLA" == "hola")
+  // los arreglos no se comparan con ==, el valor
+
+  //operador de igualdad estricta ===, compara el valor y el tipo
+
+  console.log(9 == "9");
+  console.log(9 === 9);
+  console.log(9 === "9");
+
+  //Practica como comparar valores
+  var a;
+  var b;
+
+  a = 5;
+  b = 5;
+
+  console.log(a == b);
+  console.log(a === b);
+
+  b = "10"
+
+  console.log(a == b);
+  console.log(a === b);
+
+  a = "ISABELA";
+
+  b = "ISABELA";
+
+  console.log(a == b);
+  console.log(a === b);
+
+  //Operador de desigualdad !=
+
+  // da como resultado true si son distintos y false si son iguales
+
+  console.log(9 != 6);
+  console.log(9 != 9);
+
+  console.log("isa" != "ISA");
+  console.log("bela" != "bela");
+
+  // con los arreglos no funciona 
+
+  // Operador de desigualdad estricta !== evalua valores y tipo
+
+  console.log(1 !== "1");
+  console.log(1 != "1");
+
+
+
+  // Operador mayor que >
+
+  console.log(6 > 5);
+  console.log(3 > 10);
+
+  //para las cadenas de caracteres javascript las compara en orden alfabetico
+
+  console.log("B" > "A"); // Va despues de la A
+  console.log("ACB" > "ABC"); // Compara cada uno de los caracteres
+
+  console.log("B" > "A"); // Va despues de la A
+  console.log("ACB" > "ABC"); // Compara cada uno de los caracteres
+
+  console.log("AB" > "A"); // es verdadero porque tienen más caracteres
+
+  console.log("M" > "H"); // m va despues de h en el alfabeto
+  console.log("MUNDO" > "HOLA");
+
+  var a = 15;
+  var b = 7;
+
+  console.log(a < b);
+
+
+
+  //Operador mayor o igual que >=
+
+
+  console.log(5 > 5);
+  console.log(5 >= 5);
+  console.log(10 >= 5);
+
+  // operador menor que <
+
+  console.log(5 < 6);
+  console.log(10 < 3);
+
+  // cadenas de caracteres en orden alfabetico
+  console.log("A" < "C");  // A ESTA ANTES QUE C
+  console.log("ABC" < "ACB");
+
+  //Menor o igual que <=
+
+  console.log(5 < 5);
+  console.log(5 <= 5);
+  console.log(3 <= 5);
+
+  //Operador lógica "and"
+
+  /*
+  
+  Tabla de verdad del operador AND
+  para x && y
+  
+  | X | Y | X && Y |
+  ------------------
+  | T | T | T | 
+  | T | F | F |
+  | F | T | F |
+  | F | F | F |
+  
+  La expresión solo es verdadera cuando ambos operandos son verdaderos
+  */
+
+  // en javascript y se escribe con doble &&
+  console.log(true && true);
+  console.log(true && false);
+  console.log(false && true);
+  console.log(false && false);
+
+  //condiciones
+
+  var a = 8;
+
+  console.log((a > 5) && (a < 10));
+  console.log((a > 5) && (a > 10));
+
+
+
+  //Operador lógico or ||
+
+
+  /*
+  
+  Tabla de verdad del operador OR
+  para x || y
+  
+  | X | Y | X && Y |
+  ------------------
+  | T | T | T | 
+  | T | F | T |
+  | F | T | T |
+  | F | F | F |
+  
+  */
+
+  // En javascript or se escribe con doble ||
+
+  console.log(true || true);
+  console.log(true || false);
+  console.log(false || true);
+  console.log(false || false);
+
+
+  var a = 8;
+
+  console.log((a < 5) || (a > 15))
+  console.log((a > 5) || (a > 15))
+  console.log((a == 8) || (a < 15))
+
+
+
+  //Operador lógico not NOT
+
+  /*
+  Tabla de verdad del operador Not
+  para : !X convierte las expresiones en lo contrario
+  
+  | X | !X |
+  ----------
+  | T | F | 
+  | F | T | 
+  
+  
+  
+  */
+
+  console.log(!true)
+  console.log(!false)
+
+  var a = 8;
+
+  // es una negación
+  console.log(!(a > 5));
+  console.log(!(a < 5));
+
+
+  // Setencias condicionales
+
+  // Los condicionales permiten decidir si una linea de codigo se ejecuta o no dependiendo de la condición
+
+  var x = 5;
+
+  if (x > 6) {
+    console.log("La condición es verdadera");
+  } else {
+    console.log("La condición es falsa")
+  }
+
+  if ((x > 2) && (x < 10)) {
+    console.log("La condición es verdadera");
+  }
+
+  var estacion = "invierno"
+
+  if (estacion == "invierno") {
+    console.log("SI, me encanta el invierno");
+  }
+
+  //Clausula else if
+
+  function clasificarUnValor(valor) {
+    if (valor % 2 == 0) {
+      console.log("Divisible entre 2");
+    } else if (valor % 3 == 0) {
+      console.log("Divisible entre 3");
+    } else {
+      console.log("No es divisible entre las opciones");
+    }
+
+  }
+
+  clasificarUnValor(2);
+  clasificarUnValor(3);
+  clasificarUnValor(5);
+
+
+  //Condicionales orden lógico
+
+  function clasificarValor(valor) {
+    if (valor < 5) {
+      console.log("Menor que 5.");
+    } else if (valor < 10) {
+      console.log("Menor que 10.");
+    } else {
+      console.log("Mayor o igual a 10");
+    }
+  }
+
+  clasificarValor(2);
+  clasificarValor(8);
+  clasificarValor(10.5);
+
+//Enadenar sentencias "if ...else"
+
+function interpretarIMC(indiceDeMasaCorporal){
+  if(indiceDeMasaCorporal < 18.5){
+    console.log("Bajo Peso");
+
+  }else if(indiceDeMasaCorporal <= 24.9){
+  console.log("Peso normal");
+
+  }else if (indiceDeMasaCorporal <= 29.9){
+    console.log("Tiene sobre peso");
+
+    }else{
+      console.log("Obesidad");
+    }
+
+    }
+    
+    interpretarIMC(32.8);
+
+    
+
+      // mini proyecto codigo de golf
+
+/* 
+En el  juego de golf cada hoyo tiene un par que representa el npumero promedio de golpes que se espera que haga un golfista para introducir la pelota en el hoyo
+      
+Hay un nombre diferente dependiendo de que tan por encima o por debajo del par esten tus golpes.
+
+tu funcion tomará los argumentos par y golpes
+
+retorna la cadena correcta según esta tabla que muestra los golpes en orden de mayor a menor prioridad:
+
+golpes     retornar
+--------------------------------
+1                "hole in -one"
+<= par -2        "eagle"
+par - 1          "birdie"
+par              "par"
+par + 1          "bogey"
+par + 2          "double bogey"
+>= par + 3       "go home"
+
+*/
+      
+function puntajeDeGolf(par, golpes){
+  if(golpes == 1){
+    return "hole in -one";
+
+  }else if(golpes <= par -2){
+    return "eagle";
+  }else if(golpes == par -1){
+    return "birdie";
+  }else if (golpes == par){
+    return "par";
+  }else if (golpes == par + 1){
+    return "bogey";
+  }else if(golpes == par + 2  ){
+    return "double bogey";
+  }else if(golpes == par + 3){
+    return "Go home";
+  }
+}
+
+
+
+
+
+console.log(puntajeDeGolf(4, 7));
+
+
+
+
+
+
+
+
+function diasDeSemana(dia){
+  if(dia == 'lunes'){
+    return "Hoy es lunes";
+
+  }else if(dia == 'martes'){
+    console.log("Hoy es martes");
+  }else if(dia == 'miercoles'){
+    console.log( "Hoy es miercoles");
+  }else if (dia == 'jueves'){
+    console.log( "Hoy es jueves");
+  }else if (dia == 'viernes'){
+    console.log( "Hoy es viernes");
+  }else if(dia == 'sabado'){
+    console.log('siiii sabado');
+  }else if(dia == 'domingo'){
+   console.log('vamos a misa');
+  }
+  
+}
+
+diasDeSemana('domingo')
+
+
+
+
+
+if(dia == 'lunes' || dia == 'LUNES'){
+  console.log( "Nuestro horario de atención es de 8:00 am a 4:00 pm");
+
+}else if(dia == 'martes'){
+  console.log("Hoy es martes");
+}else if(dia == 'miercoles'){
+  console.log( "Hoy es miercoles");
+}else if (dia == 'jueves'){
+  console.log( "Hoy es jueves");
+}else if (dia == 'viernes'){
+  console.log( "Hoy es viernes");
+}else if(dia == 'sabado'){
+  console.log('siiii sabado');
+}else if(dia == 'domingo'){
+ console.log('vamos a misa');
+}else{
+    console.log('no valido')
+}
+
+//sentencias switch casos diferentes
+
+function clasificarValor(valor){
+  var respuesta;
+  switch(valor){
+    case 1:
+     respuesta = "Alpha";
+      break;
+    case 2:
+      respuesta = "Beta";
+      break;
+    case 3:
+      respuesta = "Gamma";
+      break;
+    case 4:
+      respuesta = "Delta"
+        break;
+  }
+  return respuesta;
+}
+
+console.log(clasificarValor(4));
+
+// switch con cadena de caracteres
+var producto = "Helado";
+
+switch(producto){
+  case "Pizza":
+    console.log("La pizza cuesta 20.000")
+    break;
+  case "Hamburguesa":
+    console.log("La Hamburguesa cuesta 12.000")
+    break;
+  case "Helado":
+    console.log("El helado cuesta 10.000")
+    break;
+}
+
+console.log("Luego de switch");
+
+//Sentencia switch con opción predeterminada
+
+function seleccionarIdioma(valor){
+  var idioma;
+  switch(valor){
+    case 1:
+      idioma = "Español";
+      break;
+    case 2:
+      idioma = "Inglés";
+      break;
+    case 3:
+      idioma = "Italiano";
+      break;
+    defautl:
+     idioma = "Inglés"
+     break;
+  }
+  return idioma;
+}
+
+console.log(seleccionarIdioma(7));
+
+//setencias switch multiples casos
+
+function clasificarVolumen(valor){
+  var volumen;
+  switch(valor){
+    case 1:
+      volumen = "bajo";
+      break;
+    case 2:
+    case 3:
+      volumen = "Medio";
+      break;
+    case 4:
+    case 5:
+    case 6:
+      volumen = "Alta";
+      break;
+  }
+  return volumen;
+}
+
+console.log(clasificarVolumen(5));
+
+
+function conObj(palabra){
+  const palabras = {
+  palabra1: 'Buenos días',
+  palabra2: 'Buenas tardes',
+  palabra3 : 'Buenas noches'
+
+};
+
+if(palabra === palabras.palabra1){
+    console.log('Hola')
+}else{
+    console.log('Chao')
+}
+}
+
+conObj('oe')
+//Reemplazar "if else" por switch 
+
+function seleccionarPostre(valor){
+  var postre;
+  switch(valor){
+    case 1:
+      postre = "Milo";
+      break;
+    case 2:
+      postre = "Tres leches";
+      break;
+    case 3:
+      postre = "Fresa";
+      break;
+    defautl:
+     postre = "Fresa"
+     break;
+  }
+  return postre;
+}
+
+console.log(seleccionarPostre(1));
+
+//Retornar valores booleanos
+
+function esMenorQue(a, b){
+  return a < b;
+  /*
+if (a < b){
+  return true;
+}else{
+  return false;
+}
+*/
+}
+console.log(esMenorQue(6,5));
+
+//Patrón de retorno anticipado
+// Patron de retorno anticipado
+
+function miFuncion(){
+  console.log("Hola");
+  return "Mundo";
+  console.log("Adios");// no se ejecuta porque esta después del return
+
+}
+
+console.log(miFuncion());
+
+function calcularRaizCua(num){
+  if(num<0){
+    return undefined;
+  }
+  return Math.sqrt(num);
+}
+
+console.log(calcularRaizCua(-9));
+
+//Not a number Nan
+
+
+
+// Mini proyecto conteo de cartas
+
+/*
+En el juego de casino BlackJack el jugador puede sacarle ventaja a la casa llevando un registro del número relativo de cartas altas y bajas que quedan en la baraja.
+
+Esto se llama "Conteo de cartas".
+
+Tener más cartas altas en la baraja es una ventaja para el jugador. Se le asigna un valor a cada carta de acuerdo a la siguiente tabla.
+
+-Cuando el conteo es positivo el jugador deberia apostar alto 
+- cuando el conteo es negativo el jugador deberia apostar bajo
+
+-Cambio del conteo       cartas
+----------------------------------
++1                2,3,4,5,6
+0                 7,8,9
+-1                10, "J", "Q", "K", "A"
+
+Nuestra meta es definir una función para contar cartas.
+
+La función debe tomar un parámetro carta que puede ser un número o una cadena de caracteres y luego aumentar o reducir el valor de la variable global conteo de acuerdo al valor de la carta (Observa la tabla).
+
+La función debe retornar una cadena de caracteres con el conteo actual y la cadena:
+
+"Apostar" si el conteo es positivo
+"Esperar" si el conteo es cero o negativo
+
+El conteo actual y la decisión del jugador
+("Apostar" o "Esperar") deben estar separado por un espacio.
+
+
+*/
+
+var conteo = 0;
+
+function contarCartas(carta){
+  var decision;
+  switch(carta){
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      conteo++;
+      break;
+
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      conteo--;
+      break;
+  }
+  if(conteo > 0 ){
+    decision = "Apostar";
+  }else{
+    decision =  "Esperar";
+  }
+
+  return conteo + " " + decision;
+}
+
+console.log(contarCartas(2));
+console.log(contarCartas(-3));
+console.log(contarCartas("K"));
+console.log(contarCartas(2));
+console.log(contarCartas(2));
+
+
+//Crear objetos
+
+var miPerro = {
+  // propiedad - valor se separa cada par con ,
+  "nombre" : "Copito",
+  "Edad": 11,
+  "Peso": 4,
+  "raza": "pinscher"
+};
+
+console.log(miPerro)
+
+//Acceder a propiedades notación de punto
+
+var miPerro = {
+  // propiedad - valor se separa cada par con ,
+  "nombre" : "Copito",
+  "Edad": 11,
+  "Peso": 4,
+  "raza": "pinscher"
+};
+
+console.log(miPerro.nombre);
+console.log(miPerro.raza);
+
+//Acceder a propiedad de notación de corchetes
+
+var miCuaderno = {
+  "color": "verde",
+  "categoria": 3,
+  "numero de paginas": 200,
+  "numero de hojas": 100
+};
+
+console.log(miCuaderno.color);
+console.log(miCuaderno["numero de paginas"]); //cuando hay varibles con nombres separados
+
+//Acceder a propiedades varibles
+
+var resultados ={
+  1: "Isa203",
+  2: "efan43"
+};
+
+var posicion  = 2;
+ console.log(resultados[posicion]);
+
+ var mochila ={
+   "color": "azul",
+   "tamaño": "mediano",
+   "contenido": ["Botella de agua", "cuaderno"]
+ };
+
+ console.log(mochila.color);
+ mochila.color = "Amarilla";
+ console.log(mochila.color);
+ mochila.contenido.push("Sacapuntas");
+ console.log(mochila.contenido)
+
+ //Agregar propiedades
+
+ var curso ={
+   "titulo": "Aprende JavaScript desde 0",
+   "Idioma": "Español",
+   "duracion": 30
+ };
+
+ curso.vistas = 34500;
+ console.log(curso.vistas);
+
+ delete curso.duracion;
+ console.log(curso.duracion);
+
+ //Objetos para busquedas
+ // los objetos nos permiten asociar una propiedad con su valor
+
+ function buscarElementoQuimico(simbolo){
+
+   var simbolosQuimicos ={
+     "Al": "aluminio",
+      "s" : "Azufre",
+      "Cl": "cloro"
+   };
+
+    return simbolosQuimicos[simbolo];
+  
+ }
+
+ console.log(buscarElementoQuimico("Al"));
+ console.log(buscarElementoQuimico("s"));
+  console.log(buscarElementoQuimico("cl"));
+
+  //Verificar propiedades
+
+var miLibreta = {
+  "color": "verde",
+  "categoria": 3,
+  "precio": 4.56
+};
+
+console.log(miLibreta.hasOwnProperty("color"));
+
+function verificarPropiedad(obj, propiedad){
+  if(obj.hasOwnProperty(propiedad)){
+    return "propiedad: " + obj[propiedad];
+  }else{
+    return "El objeto no tiene esta propiedad";
+
+  }
+}
+
+var miLibreta = {
+  "color": "verde",
+  "categoria": 3,
+  "precio": 4.56
+};
+console.log(verificarPropiedad(miLibreta, "origen"));
+
+//manipular objetos más complejos
+//objetos en Javascript
+
+
+
+const usu = {
+  nombre: 'Isabelita',
+  edad: 3,
+  //mezclas con arrays
+  comidaFavorita : ['pollo frito', 'frutas']
+};
+
+console.log(usu.nombre) // llamar una propiedad del objeto
+// lista con las propiedades
+
+function imprimirPrimerElementoArray(arr){
+  console.log(arr[0]) // a los arrays se llega por posiciones
+}
+
+imprimirPrimerElementoArray(['juanita', 'copito', 'apolo'])
+
+Object.values(usu) // para mostrar arreglos
+
+//objetos y condicionales
+
+const tiposDeSuscripciones = {
+  free: 'solo puedes tomar cursos gratis',
+  basic: 'puedes tomar casi todos los cursos de platzi durante un mes',
+  expert : 'Holis'
+
+};
+
+tiposDeSuscripciones.free
+tiposDeSuscripciones['free']
+
+const ejemploSuscripcion = 'free'
+tiposDeSuscripciones[ejemploSuscripcion]
+
+
+
+
+
+
+
+
+
+
+</script>
